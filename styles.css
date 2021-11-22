@@ -61,6 +61,10 @@ li {
   border-color: rgba(252, 252, 249, 0.938); */
 
   border: 2px solid rgb(228, 222, 222);
-  padding: 10px;
+  padding: 0px;
   border-radius: 25px;
+}
+.service img {
+  height: 25%;
+  width: 25%;
 }
