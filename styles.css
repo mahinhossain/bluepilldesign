@@ -38,6 +38,10 @@ li a {
 li {
   list-style: none;
 }
+.goal img {
+  /* height: 70%; */
+  width: 60%;
+}
 .leftright img {
   height: 100%;
   width: 100%;
@@ -52,7 +56,7 @@ li {
 }
 .service {
   background: var(--darkblue);
-  min-height: 40%;
+  min-height: 200px;
 }
 .servicecomponent {
   /* border-radius: 2%;
@@ -60,11 +64,31 @@ li {
   border-style: groove;
   border-color: rgba(252, 252, 249, 0.938); */
 
-  border: 2px solid rgb(228, 222, 222);
+  border: 1px solid rgb(228, 222, 222);
   padding: 0px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
-.service img {
-  height: 25%;
-  width: 25%;
+
+.benifites {
+  background-color: #f7f7f7;
+  height: 100%;
+}
+
+.whatweoffer .boxitem {
+  height: 150px;
+  width: 150px;
+}
+.whatweoffer img {
+  height: 40px;
+  width: 40px;
+}
+.boxitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.partner img {
+  height: 100%;
+  width: 100%;
 }
