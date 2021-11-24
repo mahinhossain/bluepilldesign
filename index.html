@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+    <!-- <script>
+        // PREVENT CONTEXT MENU FROM OPENING
+        document.addEventListener("contextmenu", function (evt) {
+            evt.preventDefault();
+        }, false);
+
+        // PREVENT CLIPBOARD COPYING
+        document.addEventListener("copy", function (evt) {
+            // Change the copied text if you want
+            evt.clipboardData.setData("text/plain", "Copying is not allowed on this webpage");
+
+            // Prevent the default copy action
+            evt.preventDefault();
+        }, false);
+    </script> -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -344,43 +359,24 @@
                     </div>
                 </div>
 
-                <!-- 
-            <div class="row bg-info justify-content-around  ">
 
-
-
-                <div class="col-md-2   col-6   servicecomponent d-flex align-items-center justify-content-around py-2">
-                    <img src='./images/serviceresult.png' class="text-white " />
-                    <div class="text-white ">
-                        <h5 class=" m-0">100+</h5>
-                        <p class=" m-0">Successufully project </p>
-                    </div>
-                </div>
-                <div class="col-md-2  col-6  servicecomponent d-flex align-items-center justify-content-around py-2">
-                    <img src='./images/serviceresult.png' class="text-white " />
-                    <div class="text-white ">
-                        <h5 class=" m-0">100+</h5>
-                        <p class=" m-0">Successufully project </p>
-                    </div>
-                </div>
-                <div class="col-md-2  col-6  servicecomponent d-flex align-items-center justify-content-around py-2">
-                    <img src='./images/serviceresult.png' class="text-white " />
-                    <div class="text-white ">
-                        <h5 class=" m-0">100+</h5>
-                        <p class=" m-0">Successufully project </p>
-                    </div>
-                </div>
-                <div class="col-md-2  col-6 servicecomponent d-flex align-items-center justify-content-around py-2">
-                    <img src='./images/serviceresult.png' class="text-white " />
-                    <div class="text-white ">
-                        <h5 class=" m-0">100+</h5>
-                        <p class=" m-0">Successufully project </p>
-                    </div>
-                </div>
-
-
-            </div> -->
             </div>
+
+
+        </section>
+        <section class=" p-4 graphsection h-100 bg-danger">
+            <div class="  graph h-50">
+                <img class="img-fluid col-md-3 graphchild1" src="./images/log (1).png" />
+                <img class="img-fluid col-md-3 graphchild2" src="./images/log (2).png" />
+                <img class="img-fluid col-md-3 graphchild3" src="./images/log (3).png" />
+                <img class="img-fluid col-md-3 graphchild4" src="./images/log (4).png" />
+            </div>
+
+
+
+
+
+
         </section>
         <!-- Offer -->
         <section class="whatweoffer mt-5">
@@ -485,9 +481,9 @@
 
         <footer class="footer_area section_padding_130_0">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <!-- Single Widget-->
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class=" col-sm-6 col-lg-4 col-6">
                         <div class="single-footer-widget section_padding_0_130 text-center text-md-left">
                             <!-- Footer Logo-->
                             <div class="footer-logo mb-3"></div>
@@ -507,7 +503,7 @@
                         </div>
                     </div>
                     <!-- Single Widget-->
-                    <div class="col-12 col-sm-6 col-lg">
+                    <div class=" col-sm-6 col-lg col-6 mt-3">
                         <div class="single-footer-widget section_padding_0_130">
                             <!-- Widget Title-->
                             <h5 class="widget-title">About</h5>
@@ -523,7 +519,7 @@
                         </div>
                     </div>
                     <!-- Single Widget-->
-                    <div class="col-12 col-sm-6 col-lg">
+                    <div class=" col-sm-6 col-lg col-6 mt-3">
                         <div class="single-footer-widget section_padding_0_130">
                             <!-- Widget Title-->
                             <h5 class="widget-title">Support</h5>
@@ -540,7 +536,7 @@
                         </div>
                     </div>
                     <!-- Single Widget-->
-                    <div class="col-12 col-sm-6 col-lg">
+                    <div class=" col-sm-6 col-lg col-6 mt-3">
                         <div class="single-footer-widget section_padding_0_130">
                             <!-- Widget Title-->
                             <h5 class="widget-title">Contact</h5>

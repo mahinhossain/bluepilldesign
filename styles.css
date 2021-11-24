@@ -315,3 +315,30 @@ ul {
   color: black;
   font-weight: bold;
 }
+.graphsection {
+  background-color: #8a8a9e;
+  height: 400px;
+}
+.graph {
+  position: relative;
+}
+.graphchild1 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.graphchild2 {
+  position: absolute;
+  top: 25;
+  left: 25%;
+}
+.graphchild3 {
+  position: absolute;
+  top: 15;
+  left: 55%;
+}
+.graphchild4 {
+  position: absolute;
+  top: 25;
+  left: 75%;
+}
