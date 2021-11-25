@@ -48,6 +48,10 @@ li {
 }
 .goal {
   background-color: rgb(236, 236, 236);
+  background-image: url("./images/backgroundpata.svg");
+  background-position: -121px -7px;
+  background-repeat: no-repeat;
+  background-size: 40%;
 
   width: 100%;
 }
@@ -97,11 +101,33 @@ li {
   height: 40px;
   width: 40px;
 }
+
+.whatweoffer .boxitem:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(32, 10, 153),
+    rgb(127, 162, 228)
+  );
+  color: white;
+}
+
+.hoverblue:hover {
+  background-color: #4a4df5 !important;
+  color: white;
+}
 .boxitem {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+.partner {
+  background-image: url("./images/backgroundchain.svg");
+  /* background-position: left top; */
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+
+  width: 100%;
 }
 .partner img {
   height: 100%;
@@ -315,30 +341,71 @@ ul {
   color: black;
   font-weight: bold;
 }
+.graph img {
+  height: 200px;
+  width: 200px;
+}
 .graphsection {
-  background-color: #8a8a9e;
+  /* background-color: #8a8a9e; */
   height: 400px;
+  background-color: rgb(236, 236, 236);
 }
 .graph {
   position: relative;
 }
 .graphchild1 {
-  position: absolute;
-  top: 15%;
+  /* position: absolute; */
+  top: 5%;
   left: 5%;
 }
 .graphchild2 {
   position: absolute;
-  top: 25;
+  top: 40%;
   left: 25%;
 }
 .graphchild3 {
   position: absolute;
-  top: 15;
-  left: 55%;
+  top: 5%;
+  left: 45%;
 }
 .graphchild4 {
   position: absolute;
-  top: 25;
-  left: 75%;
+  top: 40%;
+  left: 65%;
+}
+
+@media only screen and (max-width: 500px) {
+  .graphsection {
+    /* background-color: #8a8a9e; */
+    height: 300px;
+    background-color: #c5ced6;
+  }
+  .graph img {
+    height: 120px;
+    width: 120px;
+  }
+  .graphchild1 {
+    /* position: absolute; */
+    top: 5%;
+    left: 5%;
+  }
+  .graphchild2 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+  }
+  .graphchild3 {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+  }
+  .graphchild4 {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+  }
+}
+.border-primary {
+  border-radius: 1px solid blue !important;
+  border: 1px solid blue !important;
 }
