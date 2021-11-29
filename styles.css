@@ -4,6 +4,9 @@
   --hov: {
   }
 }
+html {
+  font-family: "Robto" !important;
+}
 .rounded {
   border-radius: 8px !important;
 }
@@ -14,7 +17,29 @@ body {
   font-size: 90%;
   height: 100%;
 }
+.fontrelay {
+  font-family: "Raleway", sans-serif;
+}
 
+.borderinsidetext .borderbozz {
+  position: absolute;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 10%;
+  height: 100px;
+  width: 100px;
+  border-left: 50% solid black;
+  color: white;
+}
+.borderinsidetext .bordertext {
+  position: relative;
+  left: -1%;
+  top: 50%;
+}
+.borderoval {
+  border-bottom-left-radius: 60px;
+}
 .landingHeader {
   background: var(--darkblue);
   min-height: 100%;
@@ -77,6 +102,7 @@ li {
   background: var(--darkblue);
   min-height: 200px;
 }
+
 .servicecomponent {
   /* border-radius: 2%;
   border-width: 2px solid rgb(75, 6, 44);
@@ -123,11 +149,13 @@ li {
 }
 .partner {
   background-image: url("./images/backgroundchain.svg");
-  /* background-position: left top; */
-  background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
 
-  width: 100%;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .partner img {
   height: 100%;
@@ -373,6 +401,153 @@ ul {
   top: 40%;
   left: 65%;
 }
+.border-primary {
+  border-radius: 1px solid blue !important;
+  border: 1px solid blue !important;
+}
+/* whatwedo hover Image start */
+
+.whatwedo {
+  padding: 10px;
+  height: 100%;
+}
+/* owl carosul start */
+.stretch-card > .card {
+  width: 100%;
+  min-width: 100%;
+}
+
+body {
+  background-color: #f9f9fa;
+}
+
+.flex {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 991.98px) {
+  .padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .padding {
+    padding: 1rem;
+  }
+}
+
+.padding {
+  padding: 3rem;
+}
+
+.owl-carousel .item {
+  height: auto;
+  margin: 3px;
+}
+
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-carousel .item {
+  margin: 3px;
+}
+
+.owl-carousel {
+  margin-bottom: 15px;
+}
+/* owl carosul end */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.whatwedo img {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+/* hover Image End */
 
 @media only screen and (max-width: 500px) {
   .graphsection {
@@ -405,7 +580,13 @@ ul {
     left: 65%;
   }
 }
-.border-primary {
-  border-radius: 1px solid blue !important;
-  border: 1px solid blue !important;
+@media (min-width: 768px) and (max-width: 920px) {
+  .service img {
+    height: 45px;
+    margin-left: 4px;
+  }
+
+  .servicecomponent {
+    padding: auto;
+  }
 }
